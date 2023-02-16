@@ -1,6 +1,6 @@
 from get_data import get_ownerFbid, get_messages, get_combine_message
-from preprocessing import s2twp, only_contains_chinese
-from get_tokenize import get_data_token
+from data_clean import s2twp, only_contains_chinese
+from tokenize import get_data_token
 
 if __name__ == '__main__':
     OwnerFbid_df = get_ownerFbid(input_path='../orig_messages/ego_survey.csv', output_path='../orig_messages/OwnerFbid.csv')
